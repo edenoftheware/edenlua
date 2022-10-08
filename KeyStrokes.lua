@@ -33,3 +33,7 @@ hook.Add("HUDPaint", "DrawKeys", function()
     DrawKey(KEY_SPACE, "SPACE", ScrW() - 165, ScrH() - 55, 160, 50, white, red, black, "DermaLarge", false)
     //DrawKey(KEY_LSHIFT, "LSHIFT", ScrW() - 270, ScrH() - 110, 100, 50, white, red, black, "DermaLarge", false) --I don't like how it looks personally, but why not.
 end)
+
+--[[ PREVIEW
+https://femboy.astolfo.porn/GLsxVFDo
+]]
