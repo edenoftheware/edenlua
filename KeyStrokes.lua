@@ -26,10 +26,10 @@ local function DrawKey(keyButton, keyLabel, x, y, w, h, keyColor, keyColorPresse
 end
 
 hook.Add("HUDPaint", "DrawKeys", function()
-	DrawKey(KEY_W, "W", ScrW() - 110, ScrH() - 165, 50, 50, white, red, black, "DermaLarge", false)
+    DrawKey(KEY_W, "W", ScrW() - 110, ScrH() - 165, 50, 50, white, red, black, "DermaLarge", false)
     DrawKey(KEY_A, "A", ScrW() - 165, ScrH() - 110, 50, 50, white, red, black, "DermaLarge", false)
     DrawKey(KEY_S, "S", ScrW() - 110, ScrH() - 110, 50, 50, white, red, black, "DermaLarge", false)
     DrawKey(KEY_D, "D", ScrW() - 55, ScrH() - 110, 50, 50, white, red, black, "DermaLarge", false)
     DrawKey(KEY_SPACE, "SPACE", ScrW() - 165, ScrH() - 55, 160, 50, white, red, black, "DermaLarge", false)
-	//DrawKey(KEY_LSHIFT, "LSHIFT", ScrW() - 270, ScrH() - 110, 100, 50, white, red, black, "DermaLarge", false) --I don't like how it looks personally, but why not.
+    //DrawKey(KEY_LSHIFT, "LSHIFT", ScrW() - 270, ScrH() - 110, 100, 50, white, red, black, "DermaLarge", false) --I don't like how it looks personally, but why not.
 end)
