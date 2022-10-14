@@ -1,3 +1,21 @@
+--[[
+Localization
+]]
+local input = input
+local surface = surface
+local SetDrawColor = SetDrawColor
+local DrawRect = DrawRect
+local IsKeyDown = IsKeyDown
+local SetTextPos = SetTextPos
+local DrawText = DrawText
+local SetFont = SetFont
+local DrawOutlinedRect = DrawOutlinedRect
+local ScrW = ScrW
+local ScrH = ScrH
+--[[
+Localization end
+]]
+
 local white = Color(255, 255, 255)
 local black = Color(0, 0, 0)
 local red = Color(255, 0, 0)
