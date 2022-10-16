@@ -23,3 +23,4 @@ local function cock(ply)
 end 
 
 concommand.Add("getpp", cock, function() end, "pretty pos", FCVAR_NONE)
+// this one actually isnt pasted, but someone has definitely done this before (i hope)
