@@ -1,11 +1,10 @@
-local math = math
 local Round = Round
 local GetPos = GetPos
 local print = print
 local IsValid = IsValid
 local GetAngles = GetAngles
 
-local function cock(ply)
+local function yuck(ply)
     if (!IsValid(ply)) then print('what the fuck') end
 
     local xpos = math.Round(ply:GetPos().x)
@@ -22,5 +21,4 @@ local function cock(ply)
     print("Vector(" .. xpos .. ", " .. ypos .. ", " .. zpos .. ")\n" .. "Angle(" .. pang .. ", " .. yang .. ", " .. rang .. ")")
 end 
 
-concommand.Add("getpp", cock, function() end, "pretty pos", FCVAR_NONE)
-// this one actually isnt pasted, but someone has definitely done this before (i hope)
+concommand.Add("getpp", yuck, function() end, "pretty pos", FCVAR_NONE)
