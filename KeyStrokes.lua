@@ -2,7 +2,6 @@
 Localization
 ]]
 local input = input
-local surface = surface
 local SetDrawColor = SetDrawColor
 local DrawRect = DrawRect
 local IsKeyDown = IsKeyDown
@@ -53,5 +52,5 @@ hook.Add("HUDPaint", "DrawKeys", function()
 end)
 
 --[[ PREVIEW
-https://femboy.astolfo.porn/GLsxVFDo
+https://femboy.astolfo.porn/GLsxVFDo deadlink lolollololololol
 ]]
