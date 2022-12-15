@@ -1,7 +1,6 @@
 --[[
 Localization
 ]]
-local input = input
 local SetDrawColor = SetDrawColor
 local DrawRect = DrawRect
 local IsKeyDown = IsKeyDown
