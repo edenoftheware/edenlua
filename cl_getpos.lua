@@ -1,24 +1,24 @@
-local Round = Round
-local GetPos = GetPos
-local print = print
-local IsValid = IsValid
-local GetAngles = GetAngles
+local function yuck(ply, cmd, tbl, str)
+    local num = tonumber(str)
+    if isnumber(num) then
+        local xa = math.Truncate(ply:GetPos().x, num)
+        local ya = math.Truncate(ply:GetPos().y, num)
+        local za = math.Truncate(ply:GetPos().z, num)
 
-local function yuck(ply)
-    if (!IsValid(ply)) then print('what the fuck') end
+        local pa = math.Truncate(ply:GetAngles().p, num)
+        local ya = math.Truncate(ply:GetAngles().y, num)
+        local ra = math.Truncate(ply:GetAngles().r, num)
+        print("Vector(" .. xa .. ", " .. ya .. ", " .. za .. ")\n" .. "Angle(" .. pa .. ", " .. ya .. ", " .. ra .. ")")
+    else
+        local x = math.Round(ply:GetPos().x)
+        local y = math.Round(ply:GetPos().y)
+        local z = math.Round(ply:GetPos().z)
 
-    local xpos = math.Round(ply:GetPos().x)
-    local ypos = math.Round(ply:GetPos().y)
-    local zpos = math.Round(ply:GetPos().z)
-
-    local pang = math.Round(ply:GetAngles().x) // Pitch
-    local yang = math.Round(ply:GetAngles().y) // Yaw
-    local rang = math.Round(ply:GetAngles().z) // Roll
-
-    // getpos console command: setpos -95.904205 -6048.004883 -139.968750;setang 5.478009 -158.605865 0.000000
-    // getpp console command: Vector(-96, -6048, -204) \n Angle(5, -159, 0)
-
-    print("Vector(" .. xpos .. ", " .. ypos .. ", " .. zpos .. ")\n" .. "Angle(" .. pang .. ", " .. yang .. ", " .. rang .. ")")
+        local p = math.Round(ply:GetAngles().p) // Pitch
+        local y = math.Round(ply:GetAngles().y) // yw
+        local r = math.Round(ply:GetAngles().r) // Roll
+        print("Vector(" .. x .. ", " .. y .. ", " .. z .. ")\n" .. "Angle(" .. p .. ", " .. y .. ", " .. r .. ")")
+    end
 end 
 
-concommand.Add("getpp", yuck, function() end, "pretty pos", FCVAR_NONE)
+concommand.Add("getpp", yuck, function() return {"providing a num truncates the pos and ang to that number of decimal places"} end, "pretty pos", FCVAR_NONE)    
