@@ -1,4 +1,4 @@
-local dev = false -- Set to true if you are modifying this script and are executing it multiple times.
+local dev = false
 
 if dev then
     hook.Remove("KeyPress", "DoubleJump")
@@ -21,14 +21,3 @@ if CLIENT then
         LocalPlayer().doubleJump = true
     end) 
 end
-
---[[
-    NOTES:
-        - I tested this to see if it was exploitable 
-        - on the client via lua execution and it doesn't
-        - seem like it.
-
-        - This is meant for the Shared realm.
-
-    - edenware
-]]
